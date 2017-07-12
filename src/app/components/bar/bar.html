@@ -1,0 +1,10 @@
+<div class="bar">
+    <div class="progress" ng-class="{'progress-striped active': data.isSelected}">
+        <div class="progress-bar " 
+                ng-class="{'active': data.isSelected,'progress-bar-success': data.percentage < 90,'progress-bar-warning': data.percentage >= 90, 'progress-bar-danger': data.percentage === 100}" 
+                role="progressbar" ng-style="{'width': data.percentage + '%'}">
+        </div>
+        <span class="bar__percentage" ng-bind="data.percentage + '% Complete'" ></span>
+    </div>
+    <div class="bar__value" ng-bind="data.value + '/' + data.limit "></div>
+</div>

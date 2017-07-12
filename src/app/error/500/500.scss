@@ -1,0 +1,39 @@
+.error-500{
+    &.bg-server-error{
+      background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* image */
+        url(../assets/images/bg/error_page.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    position: relative;
+    min-height: -webkit-calc(100vh);
+    min-height: -moz-calc(100vh);
+    min-height: calc(100vh);
+    text-align: center;
+
+    .ops,
+    .not-exist-notice,
+    .try-later{
+        font-family: open sans;
+        color: white;
+    }
+
+    .ops{
+        font-family: open sans semibold;
+        padding-top: 285px;
+        font-size: 120px;
+    }
+
+    .not-exist-notice,
+    .try-later{
+        padding-top: 5px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,55 @@
+$menu-padding: 50px;
+$header-transform-duration: all 0.5s linear ;
+.error-400{
+    &.bg-404{
+      background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        /* image */
+        url(../assets/images/bg/error_page.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    position: relative;
+    min-height: -webkit-calc(100vh);
+    min-height: -moz-calc(100vh);
+    min-height: calc(100vh);
+    text-align: center;
+
+    .btn--take-back{
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        padding: 10px 40px;
+        margin: 30px 20px 75px;
+        background: transparent;
+        &:focus,
+        &:hover,
+        &:active,
+        &:active:focus{
+            color: #fff;
+            border: 1px solid #fff;
+        }
+    }
+
+    .ops,
+    .not-exist-notice{
+        font-family: open sans;
+        color: white;
+    }
+
+    .ops{
+        font-family: open sans semibold;
+        padding-top: 285px;
+        font-size: 120px;
+    }
+
+    .not-exist-notice{
+        padding-top: 5px;
+        font-size: 16px;
+    }
+}

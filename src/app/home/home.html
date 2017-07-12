@@ -1,0 +1,11 @@
+﻿<div class="home">
+	<div class="jumbotron">
+		<h1>Singtel test</h1>
+		<p>Bar Controllers</p>
+	</div>
+	<h4 class="home__bar-guide-text">Click on bar to set control</h4>
+	<div ng-repeat="bar in vm.bars" ng-click="vm.onBarClicked(bar)">
+		<bar data="bar"></bar>
+	</div>
+	<button class="btn btn-primary home__bar-control-btn" ng-disabled="(btn.value > 0 && vm.selectedBar.value === vm.limit) || (vm.selectedBar.value ===0 && btn.value < 0)" ng-repeat="btn in vm.buttons" ng-click="vm.onBtnClicked(btn)" ng-bind="btn.value"></button>
+</div>

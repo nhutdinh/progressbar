@@ -1,0 +1,19 @@
+.bar{
+    &:hover{
+        cursor: pointer;
+    }
+    .progress{
+    position: relative;
+        margin: 0;
+        display: inline-block;
+        width: 90%;
+        
+    }
+    &__value{
+        display: inline-block;
+    }
+    &__percentage{
+        position: absolute;
+        left: 50%;
+    }
+}
